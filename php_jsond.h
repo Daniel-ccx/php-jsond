@@ -38,9 +38,12 @@ extern zend_module_entry jsond_module_entry;
 #include "TSRM.h"
 #endif
 
+/* compatible with json */
+#define PHP_JSOND_PRIMARY 1
+
 #ifdef PHP_JSOND_PRIMARY
 #define PHP_JSOND_PREFIX json
-#define PHP_JSOND_PREFIX_STRING "jsond"
+#define PHP_JSOND_PREFIX_STRING "json"
 #define PHP_JSOND_CONSTANT "JSON"
 #define PHP_JSOND_SERIALIZABLE_INTERFACE JsonSerializable
 #define PHP_JSOND_SERIALIZABLE_INTERFACE_STRING "JsonSerializable"
